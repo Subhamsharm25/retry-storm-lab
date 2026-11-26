@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+title: "retry-storm-lab: a discrete-event study of client retry strategies and metastable failure"
+type: software
+version: 0.1.0
+date-released: 2026-11-26
+license: MIT
+repository-code: "https://github.com/Subhamsharm25/retry-storm-lab"
+abstract: "Simulation study of six client retry strategies and three server queue policies under a server brownout. Unbudgeted retries (with or without backoff and jitter) left the simulated service stuck at zero goodput; a token-bucket retry budget or LIFO with deadline drop recovered."
+keywords: [retries, backoff, jitter, metastable-failures, retry-budget, load-shedding, discrete-event-simulation, reliability]
+authors:
+  - family-names: "Sharma"
+    given-names: "Subham"

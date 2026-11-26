@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retrylab"
+version = "0.1.0"
+description = "Discrete-event study of client retry strategies and metastable failure after a server brownout"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Subham Sharma" }]
+requires-python = ">=3.11"
+dependencies = []   # the simulator is standard library only
+
+[project.optional-dependencies]
+exp = ["matplotlib>=3.8"]
+dev = ["matplotlib>=3.8", "pytest>=8", "pytest-cov>=5", "hypothesis>=6.100", "ruff>=0.8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]

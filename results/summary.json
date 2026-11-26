@@ -1,0 +1,2168 @@
+{
+  "config": {
+    "scenario": {
+      "rate": 80.0,
+      "workers": 10,
+      "service_mean": 0.1,
+      "queue_limit": 200,
+      "timeout": 1.0,
+      "max_attempts": 4,
+      "error_rate": 0.05,
+      "horizon": 90.0,
+      "outage_start": 20.0,
+      "outage_end": 30.0,
+      "outage_slowdown": 5.0,
+      "rtt": 0.002,
+      "deadline_drop": false,
+      "lifo": false,
+      "budget_ratio": 0.1,
+      "budget_cap": 10.0,
+      "recovery_window": 5,
+      "recovery_fraction": 0.85
+    },
+    "seeds": 10
+  },
+  "e1": {
+    "no-retry": {
+      "success_rate": {
+        "mean": 0.784094,
+        "ci95": 0.013713,
+        "n": 10
+      },
+      "amplification": {
+        "mean": 1.0,
+        "ci95": 0.0,
+        "n": 10
+      },
+      "wasted_fraction": {
+        "mean": 0.217279,
+        "ci95": 0.014454,
+        "n": 10
+      },
+      "p99": {
+        "mean": 0.80965,
+        "ci95": 0.054451,
+        "n": 10
+      },
+      "last10_goodput": {
+        "mean": 76.39,
+        "ci95": 1.790159,
+        "n": 10
+      },
+      "recovered_fraction": 1.0,
+      "recovery_median": 6.0
+    },
+    "immediate": {
+      "success_rate": {
+        "mean": 0.221867,
+        "ci95": 0.003578,
+        "n": 10
+      },
+      "amplification": {
+        "mean": 3.349082,
+        "ci95": 0.009403,
+        "n": 10
+      },
+      "wasted_fraction": {
+        "mean": 0.807809,
+        "ci95": 0.003581,
+        "n": 10
+      },
+      "p99": {
+        "mean": 1.275133,
+        "ci95": 0.877374,
+        "n": 10
+      },
+      "last10_goodput": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 10
+      },
+      "recovered_fraction": 0.0,
+      "recovery_median": null
+    },
+    "exp-backoff": {
+      "success_rate": {
+        "mean": 0.223521,
+        "ci95": 0.00342,
+        "n": 10
+      },
+      "amplification": {
+        "mean": 3.348266,
+        "ci95": 0.01019,
+        "n": 10
+      },
+      "wasted_fraction": {
+        "mean": 0.808284,
+        "ci95": 0.004151,
+        "n": 10
+      },
+      "p99": {
+        "mean": 2.850545,
+        "ci95": 1.151729,
+        "n": 10
+      },
+      "last10_goodput": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 10
+      },
+      "recovered_fraction": 0.0,
+      "recovery_median": null
+    },
+    "full-jitter": {
+      "success_rate": {
+        "mean": 0.223225,
+        "ci95": 0.003672,
+        "n": 10
+      },
+      "amplification": {
+        "mean": 3.348585,
+        "ci95": 0.010185,
+        "n": 10
+      },
+      "wasted_fraction": {
+        "mean": 0.807738,
+        "ci95": 0.003055,
+        "n": 10
+      },
+      "p99": {
+        "mean": 2.915193,
+        "ci95": 1.036916,
+        "n": 10
+      },
+      "last10_goodput": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 10
+      },
+      "recovered_fraction": 0.0,
+      "recovery_median": null
+    },
+    "decorrelated-jitter": {
+      "success_rate": {
+        "mean": 0.223682,
+        "ci95": 0.003597,
+        "n": 10
+      },
+      "amplification": {
+        "mean": 3.348253,
+        "ci95": 0.010251,
+        "n": 10
+      },
+      "wasted_fraction": {
+        "mean": 0.807858,
+        "ci95": 0.002974,
+        "n": 10
+      },
+      "p99": {
+        "mean": 3.138881,
+        "ci95": 1.229373,
+        "n": 10
+      },
+      "last10_goodput": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 10
+      },
+      "recovered_fraction": 0.0,
+      "recovery_median": null
+    },
+    "full-jitter+budget": {
+      "success_rate": {
+        "mean": 0.787221,
+        "ci95": 0.031037,
+        "n": 10
+      },
+      "amplification": {
+        "mean": 1.064979,
+        "ci95": 0.002728,
+        "n": 10
+      },
+      "wasted_fraction": {
+        "mean": 0.257862,
+        "ci95": 0.033325,
+        "n": 10
+      },
+      "p99": {
+        "mean": 0.937495,
+        "ci95": 0.045787,
+        "n": 10
+      },
+      "last10_goodput": {
+        "mean": 79.95,
+        "ci95": 1.893501,
+        "n": 10
+      },
+      "recovered_fraction": 1.0,
+      "recovery_median": 9.0
+    }
+  },
+  "e2": {
+    "no-retry": {
+      "0": {
+        "success_rate": {
+          "mean": 0.950026,
+          "ci95": 0.002023,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.00101,
+          "ci95": 0.00105,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.491918,
+          "ci95": 0.0121,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 75.97,
+          "ci95": 2.056928,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.0
+      },
+      "1": {
+        "success_rate": {
+          "mean": 0.940931,
+          "ci95": 0.004311,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.027498,
+          "ci95": 0.0077,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.858546,
+          "ci95": 0.032923,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 75.97,
+          "ci95": 2.056928,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.0
+      },
+      "2": {
+        "success_rate": {
+          "mean": 0.897592,
+          "ci95": 0.011023,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.077982,
+          "ci95": 0.012953,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.786399,
+          "ci95": 0.028722,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 75.97,
+          "ci95": 2.056928,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 3.0
+      },
+      "3": {
+        "success_rate": {
+          "mean": 0.862081,
+          "ci95": 0.009137,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.124749,
+          "ci95": 0.011603,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.853841,
+          "ci95": 0.043071,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 75.93,
+          "ci95": 1.984911,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 5.5
+      },
+      "5": {
+        "success_rate": {
+          "mean": 0.837919,
+          "ci95": 0.007946,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.154299,
+          "ci95": 0.012353,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.828814,
+          "ci95": 0.053677,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 76.24,
+          "ci95": 1.82686,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 6.0
+      },
+      "10": {
+        "success_rate": {
+          "mean": 0.784094,
+          "ci95": 0.013713,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.217279,
+          "ci95": 0.014454,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.80965,
+          "ci95": 0.054451,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 76.39,
+          "ci95": 1.790159,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 6.0
+      },
+      "20": {
+        "success_rate": {
+          "mean": 0.678135,
+          "ci95": 0.010527,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.341405,
+          "ci95": 0.009093,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.848932,
+          "ci95": 0.022212,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 75.87,
+          "ci95": 1.675526,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 6.5
+      }
+    },
+    "immediate": {
+      "0": {
+        "success_rate": {
+          "mean": 0.999972,
+          "ci95": 4.2e-05,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.05201,
+          "ci95": 0.002502,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.001364,
+          "ci95": 0.000521,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.581102,
+          "ci95": 0.035318,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 80.04,
+          "ci95": 1.84081,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.0
+      },
+      "1": {
+        "success_rate": {
+          "mean": 0.307508,
+          "ci95": 0.174242,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.099712,
+          "ci95": 0.514983,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.725697,
+          "ci95": 0.177418,
+          "n": 10
+        },
+        "p99": {
+          "mean": 2.237735,
+          "ci95": 0.953211,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 8.06,
+          "ci95": 18.23172,
+          "n": 10
+        },
+        "recovered_fraction": 0.1,
+        "recovery_median": 0.0
+      },
+      "2": {
+        "success_rate": {
+          "mean": 0.222442,
+          "ci95": 0.00325,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.349123,
+          "ci95": 0.009398,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807364,
+          "ci95": 0.002792,
+          "n": 10
+        },
+        "p99": {
+          "mean": 1.379107,
+          "ci95": 0.862942,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "3": {
+        "success_rate": {
+          "mean": 0.222173,
+          "ci95": 0.003179,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.349123,
+          "ci95": 0.009398,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.80746,
+          "ci95": 0.003292,
+          "n": 10
+        },
+        "p99": {
+          "mean": 1.378671,
+          "ci95": 0.882235,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "5": {
+        "success_rate": {
+          "mean": 0.222043,
+          "ci95": 0.003108,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.349123,
+          "ci95": 0.009398,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807901,
+          "ci95": 0.003544,
+          "n": 10
+        },
+        "p99": {
+          "mean": 1.303726,
+          "ci95": 0.916827,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "10": {
+        "success_rate": {
+          "mean": 0.221867,
+          "ci95": 0.003578,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.349082,
+          "ci95": 0.009403,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807809,
+          "ci95": 0.003581,
+          "n": 10
+        },
+        "p99": {
+          "mean": 1.275133,
+          "ci95": 0.877374,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "20": {
+        "success_rate": {
+          "mean": 0.221953,
+          "ci95": 0.003412,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.349109,
+          "ci95": 0.0094,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807813,
+          "ci95": 0.003324,
+          "n": 10
+        },
+        "p99": {
+          "mean": 1.024426,
+          "ci95": 0.627073,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      }
+    },
+    "exp-backoff": {
+      "0": {
+        "success_rate": {
+          "mean": 0.999972,
+          "ci95": 4.2e-05,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.052099,
+          "ci95": 0.001861,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.001247,
+          "ci95": 0.000619,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.624505,
+          "ci95": 0.030945,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 80.01,
+          "ci95": 1.89716,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.0
+      },
+      "1": {
+        "success_rate": {
+          "mean": 0.306004,
+          "ci95": 0.174502,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.104411,
+          "ci95": 0.515909,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.726648,
+          "ci95": 0.178088,
+          "n": 10
+        },
+        "p99": {
+          "mean": 2.746926,
+          "ci95": 0.905081,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 8.07,
+          "ci95": 18.25434,
+          "n": 10
+        },
+        "recovered_fraction": 0.1,
+        "recovery_median": 0.0
+      },
+      "2": {
+        "success_rate": {
+          "mean": 0.223433,
+          "ci95": 0.003383,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348266,
+          "ci95": 0.01019,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807755,
+          "ci95": 0.003962,
+          "n": 10
+        },
+        "p99": {
+          "mean": 2.455522,
+          "ci95": 1.089106,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "3": {
+        "success_rate": {
+          "mean": 0.222978,
+          "ci95": 0.003181,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348266,
+          "ci95": 0.01019,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.808293,
+          "ci95": 0.003706,
+          "n": 10
+        },
+        "p99": {
+          "mean": 2.147663,
+          "ci95": 1.179688,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "5": {
+        "success_rate": {
+          "mean": 0.223176,
+          "ci95": 0.003301,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348266,
+          "ci95": 0.01019,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.808501,
+          "ci95": 0.004278,
+          "n": 10
+        },
+        "p99": {
+          "mean": 2.768349,
+          "ci95": 1.195968,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "10": {
+        "success_rate": {
+          "mean": 0.223521,
+          "ci95": 0.00342,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348266,
+          "ci95": 0.01019,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.808284,
+          "ci95": 0.004151,
+          "n": 10
+        },
+        "p99": {
+          "mean": 2.850545,
+          "ci95": 1.151729,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "20": {
+        "success_rate": {
+          "mean": 0.223399,
+          "ci95": 0.00346,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348266,
+          "ci95": 0.01019,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.808312,
+          "ci95": 0.004101,
+          "n": 10
+        },
+        "p99": {
+          "mean": 2.467169,
+          "ci95": 1.237809,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      }
+    },
+    "full-jitter": {
+      "0": {
+        "success_rate": {
+          "mean": 1.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.051924,
+          "ci95": 0.001954,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.001041,
+          "ci95": 0.000668,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.597913,
+          "ci95": 0.040283,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 79.93,
+          "ci95": 1.822763,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.0
+      },
+      "1": {
+        "success_rate": {
+          "mean": 0.304728,
+          "ci95": 0.174739,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.108015,
+          "ci95": 0.516752,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.726955,
+          "ci95": 0.177526,
+          "n": 10
+        },
+        "p99": {
+          "mean": 2.416339,
+          "ci95": 0.968601,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 8.07,
+          "ci95": 18.25434,
+          "n": 10
+        },
+        "recovered_fraction": 0.1,
+        "recovery_median": 0.0
+      },
+      "2": {
+        "success_rate": {
+          "mean": 0.222945,
+          "ci95": 0.003518,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348599,
+          "ci95": 0.010182,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807935,
+          "ci95": 0.003006,
+          "n": 10
+        },
+        "p99": {
+          "mean": 1.712331,
+          "ci95": 0.974388,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "3": {
+        "success_rate": {
+          "mean": 0.222629,
+          "ci95": 0.002938,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348599,
+          "ci95": 0.010182,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807891,
+          "ci95": 0.002683,
+          "n": 10
+        },
+        "p99": {
+          "mean": 1.699548,
+          "ci95": 0.955764,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "5": {
+        "success_rate": {
+          "mean": 0.222911,
+          "ci95": 0.003398,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348599,
+          "ci95": 0.010182,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807975,
+          "ci95": 0.003729,
+          "n": 10
+        },
+        "p99": {
+          "mean": 2.300362,
+          "ci95": 1.116109,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "10": {
+        "success_rate": {
+          "mean": 0.223225,
+          "ci95": 0.003672,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348585,
+          "ci95": 0.010185,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807738,
+          "ci95": 0.003055,
+          "n": 10
+        },
+        "p99": {
+          "mean": 2.915193,
+          "ci95": 1.036916,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "20": {
+        "success_rate": {
+          "mean": 0.223115,
+          "ci95": 0.003313,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348599,
+          "ci95": 0.010182,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807841,
+          "ci95": 0.003141,
+          "n": 10
+        },
+        "p99": {
+          "mean": 2.365278,
+          "ci95": 1.082656,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      }
+    },
+    "decorrelated-jitter": {
+      "0": {
+        "success_rate": {
+          "mean": 1.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.05235,
+          "ci95": 0.001504,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.001137,
+          "ci95": 0.000665,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.691443,
+          "ci95": 0.028868,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 80.06,
+          "ci95": 1.761587,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.0
+      },
+      "1": {
+        "success_rate": {
+          "mean": 0.307108,
+          "ci95": 0.174289,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.103088,
+          "ci95": 0.516168,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.72533,
+          "ci95": 0.179832,
+          "n": 10
+        },
+        "p99": {
+          "mean": 3.220409,
+          "ci95": 1.125053,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 8.03,
+          "ci95": 18.16386,
+          "n": 10
+        },
+        "recovered_fraction": 0.1,
+        "recovery_median": 0.0
+      },
+      "2": {
+        "success_rate": {
+          "mean": 0.223602,
+          "ci95": 0.003496,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348239,
+          "ci95": 0.010254,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807865,
+          "ci95": 0.003061,
+          "n": 10
+        },
+        "p99": {
+          "mean": 3.137904,
+          "ci95": 1.161539,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "3": {
+        "success_rate": {
+          "mean": 0.223558,
+          "ci95": 0.003283,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348253,
+          "ci95": 0.010251,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.808167,
+          "ci95": 0.002713,
+          "n": 10
+        },
+        "p99": {
+          "mean": 3.012377,
+          "ci95": 1.22339,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "5": {
+        "success_rate": {
+          "mean": 0.223532,
+          "ci95": 0.003318,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348253,
+          "ci95": 0.010251,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.808303,
+          "ci95": 0.00288,
+          "n": 10
+        },
+        "p99": {
+          "mean": 3.224518,
+          "ci95": 1.253051,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "10": {
+        "success_rate": {
+          "mean": 0.223682,
+          "ci95": 0.003597,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348253,
+          "ci95": 0.010251,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807858,
+          "ci95": 0.002974,
+          "n": 10
+        },
+        "p99": {
+          "mean": 3.138881,
+          "ci95": 1.229373,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "20": {
+        "success_rate": {
+          "mean": 0.223645,
+          "ci95": 0.003649,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348239,
+          "ci95": 0.010261,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807872,
+          "ci95": 0.003507,
+          "n": 10
+        },
+        "p99": {
+          "mean": 3.040016,
+          "ci95": 1.258675,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      }
+    },
+    "full-jitter+budget": {
+      "0": {
+        "success_rate": {
+          "mean": 1.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.051924,
+          "ci95": 0.001954,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.001041,
+          "ci95": 0.000668,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.597913,
+          "ci95": 0.040283,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 79.93,
+          "ci95": 1.822763,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.0
+      },
+      "1": {
+        "success_rate": {
+          "mean": 0.973401,
+          "ci95": 0.016595,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.055429,
+          "ci95": 0.002375,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.048679,
+          "ci95": 0.018292,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.920257,
+          "ci95": 0.040069,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 80.43,
+          "ci95": 1.850928,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 1.5
+      },
+      "2": {
+        "success_rate": {
+          "mean": 0.915941,
+          "ci95": 0.016857,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.057993,
+          "ci95": 0.002428,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.11582,
+          "ci95": 0.021211,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.988254,
+          "ci95": 0.090872,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 80.13,
+          "ci95": 1.765407,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 5.0
+      },
+      "3": {
+        "success_rate": {
+          "mean": 0.862917,
+          "ci95": 0.027878,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.061516,
+          "ci95": 0.002874,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.177425,
+          "ci95": 0.033815,
+          "n": 10
+        },
+        "p99": {
+          "mean": 1.01132,
+          "ci95": 0.115075,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 80.03,
+          "ci95": 1.903324,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 8.5
+      },
+      "5": {
+        "success_rate": {
+          "mean": 0.831205,
+          "ci95": 0.037476,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.062892,
+          "ci95": 0.00279,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.20736,
+          "ci95": 0.040166,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.942764,
+          "ci95": 0.032689,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 80.1,
+          "ci95": 1.514771,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 8.5
+      },
+      "10": {
+        "success_rate": {
+          "mean": 0.787221,
+          "ci95": 0.031037,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.064979,
+          "ci95": 0.002728,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.257862,
+          "ci95": 0.033325,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.937495,
+          "ci95": 0.045787,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 79.95,
+          "ci95": 1.893501,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 9.0
+      },
+      "20": {
+        "success_rate": {
+          "mean": 0.673761,
+          "ci95": 0.020508,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.069833,
+          "ci95": 0.00166,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.377675,
+          "ci95": 0.018859,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.985534,
+          "ci95": 0.039475,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 80.1,
+          "ci95": 1.518519,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 10.5
+      }
+    }
+  },
+  "e3": {
+    "fifo": {
+      "no-retry": {
+        "success_rate": {
+          "mean": 0.784094,
+          "ci95": 0.013713,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.217279,
+          "ci95": 0.014454,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.80965,
+          "ci95": 0.054451,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 76.39,
+          "ci95": 1.790159,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 6.0
+      },
+      "immediate": {
+        "success_rate": {
+          "mean": 0.221867,
+          "ci95": 0.003578,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.349082,
+          "ci95": 0.009403,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807809,
+          "ci95": 0.003581,
+          "n": 10
+        },
+        "p99": {
+          "mean": 1.275133,
+          "ci95": 0.877374,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "exp-backoff": {
+        "success_rate": {
+          "mean": 0.223521,
+          "ci95": 0.00342,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348266,
+          "ci95": 0.01019,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.808284,
+          "ci95": 0.004151,
+          "n": 10
+        },
+        "p99": {
+          "mean": 2.850545,
+          "ci95": 1.151729,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "full-jitter": {
+        "success_rate": {
+          "mean": 0.223225,
+          "ci95": 0.003672,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348585,
+          "ci95": 0.010185,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807738,
+          "ci95": 0.003055,
+          "n": 10
+        },
+        "p99": {
+          "mean": 2.915193,
+          "ci95": 1.036916,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "decorrelated-jitter": {
+        "success_rate": {
+          "mean": 0.223682,
+          "ci95": 0.003597,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.348253,
+          "ci95": 0.010251,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.807858,
+          "ci95": 0.002974,
+          "n": 10
+        },
+        "p99": {
+          "mean": 3.138881,
+          "ci95": 1.229373,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "full-jitter+budget": {
+        "success_rate": {
+          "mean": 0.787221,
+          "ci95": 0.031037,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.064979,
+          "ci95": 0.002728,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.257862,
+          "ci95": 0.033325,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.937495,
+          "ci95": 0.045787,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 79.95,
+          "ci95": 1.893501,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 9.0
+      }
+    },
+    "fifo+deadline-drop": {
+      "no-retry": {
+        "success_rate": {
+          "mean": 0.845044,
+          "ci95": 0.005991,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.148052,
+          "ci95": 0.007128,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.884848,
+          "ci95": 0.036102,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 76.25,
+          "ci95": 1.6211,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.5
+      },
+      "immediate": {
+        "success_rate": {
+          "mean": 0.314905,
+          "ci95": 0.004429,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.197001,
+          "ci95": 0.010645,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.793055,
+          "ci95": 0.00326,
+          "n": 10
+        },
+        "p99": {
+          "mean": 3.995403,
+          "ci95": 0.000679,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 9.78,
+          "ci95": 1.054954,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "exp-backoff": {
+        "success_rate": {
+          "mean": 0.335347,
+          "ci95": 0.007005,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.177868,
+          "ci95": 0.014412,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.788647,
+          "ci95": 0.003708,
+          "n": 10
+        },
+        "p99": {
+          "mean": 4.690503,
+          "ci95": 0.001703,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 10.75,
+          "ci95": 1.281467,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "full-jitter": {
+        "success_rate": {
+          "mean": 0.32524,
+          "ci95": 0.004996,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.196105,
+          "ci95": 0.011125,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.791368,
+          "ci95": 0.002881,
+          "n": 10
+        },
+        "p99": {
+          "mean": 4.369316,
+          "ci95": 0.023516,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 10.15,
+          "ci95": 1.146105,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "decorrelated-jitter": {
+        "success_rate": {
+          "mean": 0.333907,
+          "ci95": 0.008482,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 3.191948,
+          "ci95": 0.014759,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.78791,
+          "ci95": 0.003784,
+          "n": 10
+        },
+        "p99": {
+          "mean": 5.369418,
+          "ci95": 0.124022,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 10.72,
+          "ci95": 1.169454,
+          "n": 10
+        },
+        "recovered_fraction": 0.0,
+        "recovery_median": null
+      },
+      "full-jitter+budget": {
+        "success_rate": {
+          "mean": 0.886453,
+          "ci95": 0.008498,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.059009,
+          "ci95": 0.002338,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.148683,
+          "ci95": 0.014751,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.925168,
+          "ci95": 0.039264,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 80.09,
+          "ci95": 1.694555,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.0
+      }
+    },
+    "lifo+deadline-drop": {
+      "no-retry": {
+        "success_rate": {
+          "mean": 0.862739,
+          "ci95": 0.003012,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.0,
+          "ci95": 0.0,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.064787,
+          "ci95": 0.004132,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.651967,
+          "ci95": 0.018707,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 75.7,
+          "ci95": 1.490557,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.0
+      },
+      "immediate": {
+        "success_rate": {
+          "mean": 0.910113,
+          "ci95": 0.002647,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.35009,
+          "ci95": 0.00903,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.061531,
+          "ci95": 0.00636,
+          "n": 10
+        },
+        "p99": {
+          "mean": 1.29579,
+          "ci95": 0.135918,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 79.6,
+          "ci95": 2.074802,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.0
+      },
+      "exp-backoff": {
+        "success_rate": {
+          "mean": 0.914792,
+          "ci95": 0.002974,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.36239,
+          "ci95": 0.014165,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.062936,
+          "ci95": 0.0069,
+          "n": 10
+        },
+        "p99": {
+          "mean": 1.618769,
+          "ci95": 0.163257,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 80.1,
+          "ci95": 1.674491,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.0
+      },
+      "full-jitter": {
+        "success_rate": {
+          "mean": 0.912572,
+          "ci95": 0.002313,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.359562,
+          "ci95": 0.009595,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.062627,
+          "ci95": 0.007546,
+          "n": 10
+        },
+        "p99": {
+          "mean": 1.436944,
+          "ci95": 0.119986,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 79.88,
+          "ci95": 1.798823,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.0
+      },
+      "decorrelated-jitter": {
+        "success_rate": {
+          "mean": 0.916527,
+          "ci95": 0.00286,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.374896,
+          "ci95": 0.012393,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.063152,
+          "ci95": 0.005542,
+          "n": 10
+        },
+        "p99": {
+          "mean": 2.121676,
+          "ci95": 0.135383,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 80.29,
+          "ci95": 1.550181,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.0
+      },
+      "full-jitter+budget": {
+        "success_rate": {
+          "mean": 0.907212,
+          "ci95": 0.001954,
+          "n": 10
+        },
+        "amplification": {
+          "mean": 1.063431,
+          "ci95": 0.002585,
+          "n": 10
+        },
+        "wasted_fraction": {
+          "mean": 0.0628,
+          "ci95": 0.006635,
+          "n": 10
+        },
+        "p99": {
+          "mean": 0.989152,
+          "ci95": 0.080634,
+          "n": 10
+        },
+        "last10_goodput": {
+          "mean": 79.5,
+          "ci95": 1.823371,
+          "n": 10
+        },
+        "recovered_fraction": 1.0,
+        "recovery_median": 0.0
+      }
+    }
+  },
+  "e4": {
+    "0.0": {
+      "success_rate": {
+        "mean": 0.787146,
+        "ci95": 0.012868,
+        "n": 10
+      },
+      "amplification": {
+        "mean": 1.001392,
+        "ci95": 1.3e-05,
+        "n": 10
+      },
+      "wasted_fraction": {
+        "mean": 0.214896,
+        "ci95": 0.015128,
+        "n": 10
+      },
+      "p99": {
+        "mean": 0.808931,
+        "ci95": 0.046795,
+        "n": 10
+      },
+      "last10_goodput": {
+        "mean": 76.61,
+        "ci95": 1.71158,
+        "n": 10
+      },
+      "recovered_fraction": 1.0,
+      "recovery_median": 6.0
+    },
+    "0.02": {
+      "success_rate": {
+        "mean": 0.79922,
+        "ci95": 0.015145,
+        "n": 10
+      },
+      "amplification": {
+        "mean": 1.02121,
+        "ci95": 4.9e-05,
+        "n": 10
+      },
+      "wasted_fraction": {
+        "mean": 0.217836,
+        "ci95": 0.016921,
+        "n": 10
+      },
+      "p99": {
+        "mean": 0.836816,
+        "ci95": 0.05867,
+        "n": 10
+      },
+      "last10_goodput": {
+        "mean": 77.84,
+        "ci95": 1.660239,
+        "n": 10
+      },
+      "recovered_fraction": 1.0,
+      "recovery_median": 6.0
+    },
+    "0.05": {
+      "success_rate": {
+        "mean": 0.807838,
+        "ci95": 0.020412,
+        "n": 10
+      },
+      "amplification": {
+        "mean": 1.048721,
+        "ci95": 0.001243,
+        "n": 10
+      },
+      "wasted_fraction": {
+        "mean": 0.226265,
+        "ci95": 0.020896,
+        "n": 10
+      },
+      "p99": {
+        "mean": 0.884257,
+        "ci95": 0.04747,
+        "n": 10
+      },
+      "last10_goodput": {
+        "mean": 80.02,
+        "ci95": 1.809851,
+        "n": 10
+      },
+      "recovered_fraction": 1.0,
+      "recovery_median": 7.5
+    },
+    "0.1": {
+      "success_rate": {
+        "mean": 0.787221,
+        "ci95": 0.031037,
+        "n": 10
+      },
+      "amplification": {
+        "mean": 1.064979,
+        "ci95": 0.002728,
+        "n": 10
+      },
+      "wasted_fraction": {
+        "mean": 0.257862,
+        "ci95": 0.033325,
+        "n": 10
+      },
+      "p99": {
+        "mean": 0.937495,
+        "ci95": 0.045787,
+        "n": 10
+      },
+      "last10_goodput": {
+        "mean": 79.95,
+        "ci95": 1.893501,
+        "n": 10
+      },
+      "recovered_fraction": 1.0,
+      "recovery_median": 9.0
+    },
+    "0.2": {
+      "success_rate": {
+        "mean": 0.584382,
+        "ci95": 0.140645,
+        "n": 10
+      },
+      "amplification": {
+        "mean": 1.118692,
+        "ci95": 0.021115,
+        "n": 10
+      },
+      "wasted_fraction": {
+        "mean": 0.469505,
+        "ci95": 0.141476,
+        "n": 10
+      },
+      "p99": {
+        "mean": 1.543956,
+        "ci95": 0.333855,
+        "n": 10
+      },
+      "last10_goodput": {
+        "mean": 63.84,
+        "ci95": 24.07545,
+        "n": 10
+      },
+      "recovered_fraction": 0.8,
+      "recovery_median": 22.0
+    },
+    "0.5": {
+      "success_rate": {
+        "mean": 0.220901,
+        "ci95": 0.003358,
+        "n": 10
+      },
+      "amplification": {
+        "mean": 1.396661,
+        "ci95": 0.002108,
+        "n": 10
+      },
+      "wasted_fraction": {
+        "mean": 0.805445,
+        "ci95": 0.003243,
+        "n": 10
+      },
+      "p99": {
+        "mean": 0.652989,
+        "ci95": 0.046779,
+        "n": 10
+      },
+      "last10_goodput": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 10
+      },
+      "recovered_fraction": 0.0,
+      "recovery_median": null
+    },
+    "1.0": {
+      "success_rate": {
+        "mean": 0.220901,
+        "ci95": 0.003358,
+        "n": 10
+      },
+      "amplification": {
+        "mean": 1.776379,
+        "ci95": 0.004263,
+        "n": 10
+      },
+      "wasted_fraction": {
+        "mean": 0.80558,
+        "ci95": 0.003234,
+        "n": 10
+      },
+      "p99": {
+        "mean": 0.652989,
+        "ci95": 0.046779,
+        "n": 10
+      },
+      "last10_goodput": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 10
+      },
+      "recovered_fraction": 0.0,
+      "recovery_median": null
+    }
+  }
+}
